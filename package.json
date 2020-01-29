@@ -1,0 +1,26 @@
+{
+    "name": "@inpassor/prettier-config",
+    "version": "0.1.0",
+    "license": "MIT",
+    "author": "Oleg V. Kuzmin",
+    "description": "prettier-config",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Inpassor/prettier-config"
+    },
+    "bugs": {
+        "url": "https://github.com/Inpassor/prettier-config/issues"
+    },
+    "homepage": "https://github.com/Inpassor/prettier-config",
+    "keywords": [
+        "prettier",
+        "config"
+    ],
+    "scripts": {
+        "push-tags": "git push && git push --tags",
+        "release-major": "npm version major -m \"%s\" && npm run push-tags",
+        "release-minor": "npm version minor -m \"%s\" && npm run push-tags",
+        "release-patch": "npm version patch -m \"%s\" && npm run push-tags"
+    },
+    "main": ".prettierrc.js"
+}
